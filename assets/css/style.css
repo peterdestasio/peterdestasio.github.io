@@ -1,0 +1,844 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : perfectcoder
+Template Name: Binte - Personal Portfolio Template
+Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL CSS STYLE
+* 02.PRELOADER & BOUNCE CCS STYLE
+* 03.HOMEPAGE CSS STYLE
+    -LOGO CSS
+    -MENU CSS
+* 04.ABOUT CSS STYLE
+* 05.SERVICE CSS STYLE
+* 06.WORK CSS STYLE
+* 07.COMPLETE PROJECT CSS STYLE
+* 08.BLOG CSS STYLE
+* 09.CONTACT CSS STYLE
+* 10.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 01.GLOBAL STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+body {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 1px;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #232323;
+}
+
+html,
+body {
+    height: 100%
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #000;
+}
+
+img {
+    width: 100%;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+p {
+    line-height: 32px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.no-padding {
+    padding: 0
+}
+
+.section-padding {
+    padding: 70px 0px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    margin-top: 0;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 45px;
+}
+
+.section-title p {
+    font-weight: 300;
+}
+
+.section-heading .lead, .section-heading h2 {
+    text-align: center;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 02.PRELOADER & BOUNCE CCS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.preloader {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.status-mes {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -22px;
+    font-size: 10px;
+    text-indent: -12345px;
+    border-top: 8px solid rgba(0, 0, 0, 0.08);
+    border-right: 8px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 8px solid rgba(0, 0, 0, 0.08);
+    border-left: 8px solid #000;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 03.HOMEPAGE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.welcome-area {
+    height: 100%;
+}
+
+#background-effect {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.welcome-image-area {
+    position: relative;
+    height: 100%;
+    background: url(../images/bg/my.jpg);
+    background-size: cover;
+    z-index: 1;
+}
+
+.welcome-image-area:after {
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+
+.display-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.display-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header-text h2 {
+    color: #fafafa;
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: capitalize;
+    margin-top: 0;
+}
+
+.header-text p {
+    color: #fafafa;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+.social-icons {
+
+}
+
+.social-icons ul {
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons ul li {
+    display: inline-block;
+}
+
+.social-icons ul li a {
+    color: #fafafa;
+    margin: 0px 10px;
+    font-size: 20px;
+}
+
+.header-text .home-arrow-down {
+    text-align: center;
+    position: absolute;
+    bottom: -250px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header-text .home-arrow-down .btn {
+    font-size: 30px;
+}
+
+.header-text .home-arrow-down .fa {
+    color: #fafafa;
+    display: inline-block;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-animation-name: home-arrow-down;
+    animation-name: home-arrow-down;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes home-arrow-down {
+    from {
+        -webkit-transform: translate3d( 0, 0px, 0);
+        transform: translate3d( 0, 0px, 0);
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    10% {
+        -webkit-transform: translate3d( 0, 5px, 0);
+        transform: translate3d( 0, 5px, 0);
+        filter: alpha(opacity=100);
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    to {
+        -webkit-transform: translate3d( 0, 30px, 0);
+        transform: translate3d( 0, 30px, 0);
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+@keyframes home-arrow-down {
+    from {
+        -webkit-transform: translate3d( 0, 0px, 0);
+        transform: translate3d( 0, 0px, 0);
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    10% {
+        -webkit-transform: translate3d( 0, 5px, 0);
+        transform: translate3d( 0, 5px, 0);
+        filter: alpha(opacity=100);
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+    to {
+        -webkit-transform: translate3d( 0, 30px, 0);
+        transform: translate3d( 0, 30px, 0);
+        filter: alpha(opacity=0);
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+}
+
+.header-top-area {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+}
+
+.logo {
+    padding-top: 28px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.logo a {
+    color: #fff;
+    text-transform: uppercase;
+    background: #000;
+    padding: 5px 10px;
+}
+
+.nav-toggle {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.toggle-btn {
+    background-color: #000;
+    border: 0 none;
+    padding: 10px;
+    outline: none;
+}
+
+.toggle-btn .icon-bar {
+    background-color: #fafafa;
+    display: block;
+    height: 2px;
+    margin-bottom: 5px;
+    width: 22px;
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.toggle-btn.active .icon-bar:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+}
+
+.toggle-btn.active .icon-bar:nth-child(1) {
+    top: 9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.toggle-btn.active .icon-bar:nth-child(3) {
+    top: -5px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.toggle-btn .icon-bar:last-child {
+    margin-bottom: 0;
+}
+
+.nav-toggle + .navbar-collapse {
+    margin-right: 43px;
+}
+
+.site-header .navbar-collapse {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+
+.site-header.active .navbar-collapse {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+
+.mainmenu {
+    margin-top: 18px;
+}
+
+.mainmenu .navbar-nav li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 13px;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    font-weight: 300;
+}
+
+ul.navbar-nav {
+    background: #000;
+    margin-right: 5px;
+    margin-top: 6px;
+}
+
+.mainmenu .navbar-nav li a:hover {
+    background: none;
+    color: #ccc;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.nav li a:focus,
+.nav li a:hover {
+    background: none;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navbar {
+    margin: 0;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 04.ABOUT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+
+.about-text h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.about-text h3 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.about-text p {
+    font-weight: 300;
+}
+
+.single-progress-bar {
+    margin-bottom: 10px;
+}
+.single-progress-bar p span{
+    text-transform: uppercase;
+}
+.my-skill {
+	margin-top: 90px;
+}
+
+.progress-bar {
+    background: #232323;
+}
+
+.progress {
+    height: 10px;
+    margin-bottom: 12px;
+    background: #F7F7F7;
+    box-shadow: none !important;
+    border: 0;
+    margin-top: 8px;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 05.SERVICE CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.service-area {
+    background: #fafafa;
+}
+
+.single-service {
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.single-service i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #232323;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.single-service h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #232323;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.single-service p {
+    color: #232323;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 06.WORK CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.work {
+    background: #F7F7F7;
+}
+
+.work-inner .mix {
+    display: none;
+}
+
+ul.work {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+ul.work li {
+    display: inline-block;
+    padding-bottom: 4px;
+    margin: 0 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-bottom: 2px solid transparent;
+}
+
+ul.work li:hover {
+    color: #000;
+    -webkit-transition: .3s;
+    transition: .3s;
+    border-bottom: 2px solid #000;
+}
+
+ul.work li.active {
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.work .item {
+    padding: 0;
+    margin: 0;
+}
+
+.work figure.effect-bubba img {
+    height: auto;
+    width: 100%;
+}
+
+.work .grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.work .grid figure:hover {
+    background: #000;
+}
+
+.work figure.effect-bubba h2 {
+    margin-top: 20%;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: #000;
+    display: inline-block;
+    padding: 2px 10px;
+    color: #fff;
+}
+
+.work figure.effect-bubba p {
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.work figure.effect-bubba p strong {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-right: 5px;
+}
+
+.work .item:hover figure.effect-bubba h2 {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 07.COMPLETE PROJECT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.single-project-complete {
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.single-project-complete h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #232323;
+}
+
+.single-project-complete h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #232323;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 08.BLOG CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.blog-area {
+    background: #f7f7f7;
+}
+
+.single-blog {
+    padding: 10px;
+}
+
+.single-blog a.blog-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #333;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.single-blog a.blog-title:hover {
+    color: #000;
+}
+a.read-more {
+    color: #000;
+    margin-top: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+}
+
+
+/*
+* ----------------------------------------------------------------------------------------
+* 09.CONTACT CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.contact-me-area {}
+
+
+
+.form-control {
+    display: block;
+    border: 0px;
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #F7F7F7;
+    background-image: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin-bottom: 25px;
+}
+
+.form-control:focus {
+    border-color: #000;
+    outline: 0;
+    box-shadow: none;
+}
+
+.contact-form button.btn {
+    display: inline-block;
+    color: #fff;
+    background: none;
+    padding: 15px 25px;
+    border: 1px solid #333;
+    font-size: 14px;
+    border-radius: 0px;
+    font-weight: 300;
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: #232323;
+    text-transform: capitalize;
+    border-radius: 30px;
+}
+
+.contact-form button.btn:hover {
+    background: transparent;
+    border: 1px solid #000;
+    color: #000;
+    -webkit-transition: all 0.4s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.input-success,
+.input-error {
+    margin-bottom: 0;
+    margin-top: 10px;
+    border-radius: 4px;
+    display: none;
+}
+
+.input-success {
+    border: 1px solid #01B500;
+}
+
+.input-error {
+    border: 1px solid #ff0000;
+}
+
+.single-contact-details {
+    margin-bottom: 30px;
+}
+
+.single-contact-details i {
+    font-size: 20px;
+}
+
+.single-contact-details h2 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.single-contact-details p {}
+
+/* 01. Timeline Styles
+ * =================================================================== */
+
+ .timeline-icon .fa {
+    color: white;
+    margin: 14px;
+    font-size: 1.7em;
+}
+
+/*
+* ----------------------------------------------------------------------------------------
+* 10.FOOTER CSS STYLE
+* ----------------------------------------------------------------------------------------
+*/
+
+.footer-area {
+    background: #0C0B0B;
+    padding: 80px 0px;
+}
+
+.footer-area p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #fff;
+}
